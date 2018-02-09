@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">default</Platform>
+    <ProjectGuid>e4c04d3a-3983-4e07-ba3b-2f01d505fe04</ProjectGuid>
+    <OutputType>library</OutputType>
+    <CrateName>Phrases</CrateName>
+    <Name>Phrases</Name>
+    <RootNamespace>Phrases</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|default' ">
+    <LinkTimeOptimization>false</LinkTimeOptimization>
+    <DebugSymbols>true</DebugSymbols>
+    <OptimizationLevel>0</OptimizationLevel>
+    <PlatformTarget>default</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|default' ">
+    <LinkTimeOptimization>false</LinkTimeOptimization>
+    <DebugSymbols>false</DebugSymbols>
+    <OptimizationLevel>2</OptimizationLevel>
+    <PlatformTarget>default</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Code Include="src\lib.rs" />
+    <Folder Include="src\greetings\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\VisualRust\VisualRust.Rust.targets" />
+</Project>
