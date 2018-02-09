@@ -1,0 +1,11 @@
+[root]
+name = "odds_ends"
+version = "0.1.0"
+dependencies = [
+ "phrases 0.1.0",
+]
+
+[[package]]
+name = "phrases"
+version = "0.1.0"
+

@@ -1,0 +1,7 @@
+[package]
+name = "odds_ends"
+version = "0.1.0"
+authors = ["Dmitri Nesteruk <foo@bar.com>"]
+
+[dependencies]
+phrases = { path = "../Phrases" }
